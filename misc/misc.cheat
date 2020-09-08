@@ -1,13 +1,22 @@
 % Misc Linux & Applications
 
+# List all processes by user and pipe to less
+ps aux | less
+
+# Untar a gzip'ed file
+tar xzvf <GzipTarFile>
+
+# Untar a bzip'ed file
+tar xjvf <BzipTarFile>
+
+# Better extraction solution (for unzip, bunzip, untar, etc.)
+dtrx <ZIPedFile>
+
 # Get a json output of all windows in the current i3-wm session
 i3-msg -t get_tree | jq
 
 # Shrink a video
 ffmpeg -i <InputFile> -r 30 -s 960x540 -strict -2 <OutputFile>
-
-# Better extraction solution (for unzip, bunzip, untar, etc.)
-dtrx
 
 # Screenshot: Whole screen
 scrot
@@ -51,7 +60,7 @@ espeak
 # Ncurses spreadsheet
 sc
 
-# Ncurses git
+# Ncurses git (must be launched from a git repo)
 tig
 
 # Reddit browser
