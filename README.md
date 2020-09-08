@@ -1,0 +1,2 @@
+# cheats
+My Navi Cheats
