@@ -4,10 +4,13 @@
 ps aux | less
 
 # Untar a gzip'ed file
-tar xzvf <GzipTarFile>
+tar -xzvf <GzipTarFile>
 
 # Untar a bzip'ed file
-tar xjvf <BzipTarFile>
+tar -xjvf <BzipTarFile>
+
+# Tar and zip a file or directory (recursively)
+tar -czvf <ArchiveName> <FileOrDirectory>
 
 # Better extraction solution (for unzip, bunzip, untar, etc.)
 dtrx <ZIPedFile>
