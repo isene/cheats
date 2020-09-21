@@ -54,8 +54,14 @@ saidar
 # Shows all systemd services (root to change status etc.)
 chkservice
 
-# Ascii art creator
-aewan
+# Disk usage overview getting every device possible
+duf --all
+
+# Disk usage overview but disregard special devices
+duf -hide-special
+
+# Disk usage overview (see https://github.com/muesli/duf)
+duf
 
 # Text to speech
 espeak
