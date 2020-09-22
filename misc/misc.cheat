@@ -63,6 +63,12 @@ duf -hide-special
 # Disk usage overview (see https://github.com/muesli/duf)
 duf
 
+# Interactive setup of displays
+arandr
+
+# Auto-setup displays
+xrandr --auto
+
 # Text to speech
 espeak
 
