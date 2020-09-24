@@ -39,6 +39,9 @@ neofetch
 # Comprehensive system info
 inxi
 
+# Comprehensive battery information
+upower -d
+
 # Show disk usage and allow for deleting stuff
 ncdu
 
