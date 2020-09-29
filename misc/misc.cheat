@@ -1,5 +1,8 @@
 % Misc Linux & Applications
 
+# Edit filenames in current directory in you $EDITOR
+vidir
+
 # List all processes by user and pipe to less
 ps aux | less
 
