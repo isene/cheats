@@ -24,6 +24,9 @@ i3-msg -t get_tree | jq
 # Shrink a video
 ffmpeg -i <InputFile> -r 30 -s 960x540 -strict -2 <OutputFile>
 
+# Create blurry background pictures from images in current dir
+mkdir blurrybackgrounds && for i in *.jpg *.JPG *.png *.PNG ; do out=$(uuidgen).jpg ; convert -quality 75 "$i" -strip -auto-orient -resize 4x4 -resize 1920x1080\! "blurrybackgrounds/${out}" ; done
+
 # Screenshot: Whole screen
 scrot
 
