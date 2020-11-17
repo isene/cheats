@@ -39,6 +39,9 @@ scrot -s
 # Screenshot: Select the part of the screen, then wait X seconds
 scrot -s -d <seconds>
 
+# Test download/upload network speeds
+speedtest-cli
+
 # Basic, good system info
 neofetch
 
