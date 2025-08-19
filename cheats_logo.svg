@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="200" height="200" fill="#1a1a1a"/>
+  
+  <!-- Terminal window -->
+  <rect x="30" y="30" width="140" height="140" rx="5" fill="#0d0d0d" stroke="#333" stroke-width="2"/>
+  
+  <!-- Command lines with syntax highlighting -->
+  <g font-family="monospace" font-size="10">
+    <!-- Command 1 -->
+    <text x="40" y="50" fill="#569cd6">$</text>
+    <text x="50" y="50" fill="#9cdcfe">git</text>
+    <text x="75" y="50" fill="#ce9178">status</text>
+    
+    <!-- Command 2 -->
+    <text x="40" y="70" fill="#569cd6">$</text>
+    <text x="50" y="70" fill="#9cdcfe">docker</text>
+    <text x="90" y="70" fill="#ce9178">ps -a</text>
+    
+    <!-- Command 3 -->
+    <text x="40" y="90" fill="#569cd6">$</text>
+    <text x="50" y="90" fill="#9cdcfe">kubectl</text>
+    <text x="95" y="90" fill="#ce9178">get pods</text>
+    
+    <!-- Command 4 with cursor -->
+    <text x="40" y="110" fill="#569cd6">$</text>
+    <text x="50" y="110" fill="#9cdcfe">vim</text>
+    <text x="75" y="110" fill="#ce9178">cheatsheet</text>
+    
+    <!-- Blinking cursor -->
+    <rect x="135" y="100" width="6" height="12" fill="#00ff00">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Quick reference cards floating -->
+  <g opacity="0.8">
+    <!-- Card 1 -->
+    <rect x="120" y="120" width="40" height="30" fill="#2a2a2a" stroke="#666" stroke-width="1" rx="2">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <text x="140" y="138" font-family="monospace" font-size="8" fill="#00ff00" text-anchor="middle">TIPS</text>
+    
+    <!-- Card 2 -->
+    <rect x="110" y="125" width="40" height="30" fill="#333" stroke="#666" stroke-width="1" rx="2">
+      <animateTransform attributeName="transform" type="translate" values="0,0;0,-3;0,0" dur="3s" begin="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Search highlight animation -->
+  <rect x="38" y="82" width="85" height="14" fill="#ffff00" opacity="0">
+    <animate attributeName="opacity" values="0;0.3;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Ruby gem -->
+  <g transform="translate(30, 160) scale(0.25)">
+    <path d="M -20 -10 L 20 -10 L 30 0 L 20 10 L -20 10 L -30 0 Z" fill="#CC342D" opacity="0.6"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="100" y="185" font-family="monospace" font-size="20" fill="#fff" text-anchor="middle" font-weight="bold">cheats</text>
+  <text x="100" y="197" font-family="monospace" font-size="9" fill="#888" text-anchor="middle">Command Line Cheatsheets</text>
+</svg>
